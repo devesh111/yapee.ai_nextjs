@@ -80,7 +80,7 @@ const Pricing = () => {
                     {plans.map((plan, index) => (
                         <div
                             key={index}
-                            className={`relative hover:scale-95 rounded-3xl p-8 ${
+                            className={`relative rounded-3xl p-8 ${
                                 plan.highlighted
                                     ? "gradient-bg text-white shadow-2xl scale-105 lg:scale-110"
                                     : "bg-background border border-border/50 card-shadow"
