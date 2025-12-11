@@ -137,6 +137,10 @@
 .gradient-bg {
     background: var(--gradient-primary);
 }
+.hero-bg {
+    background: url("/images/hero-bg.jpg");
+    background-size: cover;
+}
 
 .gradient-bg-soft {
     background: var(--gradient-primary-soft);

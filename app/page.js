@@ -16,6 +16,7 @@ import UseCases from "@/components/use-cases";
 import Footer from "@/components/footer";
 import { useEffect, useState } from "react";
 import BackToTop from "@/components/back-to-top";
+import WhatWeOffer from "@/components/what-we-offer";
 
 export default function Home() {
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -40,7 +41,8 @@ export default function Home() {
             <main>
                 <Hero />
                 <SocialProof />
-                <PainPoints />
+                {/* <PainPoints /> */}
+                <WhatWeOffer />
                 <Features />
                 <HowItWorks />
                 <UseCases />
