@@ -33,7 +33,7 @@ const Hero = () => {
                             </span>
                         </div>
 
-                        <div className="text-xl text-center p-4 font-bold mb-0">
+                        <div className="animate-fade-up text-xl text-center p-4 font-bold mb-0">
                             <span className="gradient-text">AI-Powered</span> ✨
                         </div>
 
