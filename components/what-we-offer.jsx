@@ -1,11 +1,11 @@
 "use client";
 
-import { Clock, Repeat, UserX, Layers, BarChart3, Clock1 } from "lucide-react";
+import { Clock, Repeat, UserX, Layers, BarChart3, Clock1, Grid2x2Check } from "lucide-react";
 import Image from "next/image";
 
 const painPoints = [
     {
-        icon: UserX,
+        icon: Grid2x2Check,
         text1: "Numerous Powerful Messaging Categories",
         text2: "Promotions, Offers, Coupons, Carousels and more - Risk-Free!"
     },
