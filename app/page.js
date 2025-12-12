@@ -12,7 +12,7 @@ import PainPoints from "@/components/pain-points";
 import Pricing from "@/components/pricing";
 import SocialProof from "@/components/social-proof";
 import Testimonials from "@/components/testimonials";
-import UseCases from "@/components/use-cases";
+import AdvancedFeatures from "@/components/advanced-features";
 import Footer from "@/components/footer";
 import { useEffect, useState } from "react";
 import BackToTop from "@/components/back-to-top";
@@ -52,11 +52,12 @@ export default function Home() {
                 <WhatWeOffer />
                 <Features scrollToSection={scrollToSection} />
                 <Metrics />
+                <AdvancedFeatures />
                 <HowItWorks />
-                <UseCases />
-                <Integrations />
                 <Testimonials />
-                <Pricing />
+                {/* <Integrations />
+                
+                <Pricing /> */}
                 <FAQ />
                 <CTASection />
                 {showBackToTop && <BackToTop scrollToTop={scrollToTop} />}

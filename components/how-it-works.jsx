@@ -1,48 +1,45 @@
 "use client";
 
-import { Link, Brain, Rocket } from "lucide-react";
+import { Zap, MessageCircle, CheckCheck } from "lucide-react";
 
 const steps = [
     {
-        icon: Link,
-        number: "01",
-        title: "Connect your tools",
+        icon: CheckCheck,
+        number: "🏆",
+        title: "Earn Official Green Tick Verification",
         description:
-            "Connect your helpdesk, CRM, calendar, and data sources in a few clicks. Yapee.AI syncs your knowledge base and conversation history automatically.",
+            "Get the green tick and broadcast unlimited notifications daily on WhatsApp.",
     },
     {
-        icon: Brain,
-        number: "02",
-        title: "Train your AI",
+        icon: MessageCircle,
+        number: "💬",
+        title: "Enjoy Dedicated Live Chat Support",
         description:
-            "Choose what the AI should (and shouldn't) handle. Import FAQs, canned responses, and workflows to create on-brand, compliant replies.",
+            "Priority chat support from Yapee.AI team via WhatsApp, phone, live chat, and email.",
     },
     {
-        icon: Rocket,
-        number: "03",
-        title: "Launch & optimize",
+        icon: Zap,
+        number: "💥",
+        title: "New WhatsApp features, always",
         description:
-            "Go live on your website, in-app, or social channels. Track performance with real-time analytics, then iterate with insights on resolution rates and revenue influence.",
+            "Constantly evolving WhatsApp features so you always deliver the best customer experience.",
     },
 ];
 
 const HowItWorks = () => {
     return (
-        <section id="how-it-works" className="py-20 lg:py-28 bg-background">
+        <section id="how-it-works" className="py-20 lg:py-28 bg-muted/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-2 rounded-full gradient-bg-soft border border-primary/10 text-primary text-sm font-medium mb-6">
-                        How it works
+                        Launch WhatsApp Business API Effortlessly
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        From setup to ROI in{" "}
-                        <span className="gradient-text">days, not months</span>
+                        Get <span className="gradient-text">WhatsApp Business API</span> Quickly
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Yapee.AI is designed to plug neatly into your existing
-                        stack—no heavy IT projects, just faster replies and
-                        happier customers.
+                        Yapee.AI leverages Official WhatsApp Business APIs for full compliance with WhatsApp policies
                     </p>
                 </div>
 

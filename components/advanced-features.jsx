@@ -1,70 +1,69 @@
 "use client";
 
-import { Building2, ShoppingCart, Landmark, Users } from "lucide-react";
+import { BotMessageSquare, ChartNoAxesCombined, MessagesSquare, Radio } from "lucide-react";
 
-const useCases = [
+const features = [
     {
-        icon: Building2,
-        title: "SaaS & B2B",
+        icon: MessagesSquare,
+        title: "Multi-Agent Live Chat Support",
         description:
-            "Qualify trials, route enterprise leads, and resolve technical questions before they hit your engineers.",
+            "Enable multiple team members to manage live chat support from one WhatsApp Business number. Filter chats by tags, campaigns, and attributes for intelligent agent routing.",
     },
     {
-        icon: ShoppingCart,
-        title: "E-commerce & DTC",
+        icon: ChartNoAxesCombined,
+        title: "Real-Time Analytics",
         description:
-            "Answer order questions, recommend products, and recover abandoned carts directly in chat.",
+            "Track campaign results in real-time. Monitor read, replied, and clicked rates per campaign, then retarget intelligently for better conversions.",
     },
     {
-        icon: Landmark,
-        title: "Fintech & Banking",
+        icon: BotMessageSquare,
+        title: "Build No‑Code Chatbots in Minutes",
         description:
-            "Handle routine balance and policy queries securely while routing complex cases to specialists.",
+            "Design custom chatbot flows your way! Use the intuitive drag-and-drop builder for chatbots and catalogs to craft engaging conversational journeys.",
     },
     {
-        icon: Users,
-        title: "Customer Success Teams",
+        icon: Radio,
+        title: "Import Contacts and Broadcast Instantly",
         description:
-            "Proactively engage at-risk accounts and automate playbooks around renewals and expansions.",
+            "Simply import all your contacts and broadcast approved messages instantly.​ View real-time analytics on the Yapee.AI platform for delivery, read rates, and more.",
     },
 ];
 
-const UseCases = () => {
+const AdvancedFeatures = () => {
     return (
-        <section id="use-cases" className="py-20 lg:py-28 bg-muted/30">
+        <section id="advanced-features" className="py-20 lg:py-28 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-2 rounded-full gradient-bg-soft border border-primary/10 text-primary text-sm font-medium mb-6">
-                        Built for modern teams
+                        Convert Chats into Customers
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Flexible enough for every{" "}
+                        Conversion‑Driving{" "}
                         <span className="gradient-text">
-                            conversation-heavy team
+                            Advanced Features
                         </span>
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Whether you're running a lean support team or scaling a
-                        global sales org, Yapee.AI adapts to the way you work.
+                        Boost your revenue with the Yapee.AI marketing platform.
                     </p>
                 </div>
 
                 {/* Use Case Cards */}
                 <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {useCases.map((useCase, index) => (
+                    {features.map((eature, index) => (
                         <div
                             key={index}
                             className="bg-background rounded-3xl border border-border/50 p-6 card-shadow hover:shadow-xl hover:border-primary/20 hover:-translate-y-1 transition-all duration-300 group"
                         >
                             <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
-                                <useCase.icon className="w-6 h-6 text-primary" />
+                                <eature.icon className="w-6 h-6 text-primary" />
                             </div>
                             <h3 className="text-lg font-bold text-foreground mb-3">
-                                {useCase.title}
+                                {eature.title}
                             </h3>
                             <p className="text-sm text-muted-foreground leading-relaxed">
-                                {useCase.description}
+                                {eature.description}
                             </p>
                         </div>
                     ))}
@@ -74,4 +73,4 @@ const UseCases = () => {
     );
 };
 
-export default UseCases;
+export default AdvancedFeatures;
