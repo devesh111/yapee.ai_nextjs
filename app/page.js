@@ -35,19 +35,26 @@ export default function Home() {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
+
+    const scrollToSection = (href) => {
+        const element = document.querySelector(href);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <div className="min-h-screen bg-white overflow-hidden">
             <Navbar />
             <main>
-                <Hero />
+                <Hero scrollToSection={scrollToSection}/>
                 <SocialProof />
                 {/* <PainPoints /> */}
                 <WhatWeOffer />
-                <Features />
+                <Features scrollToSection={scrollToSection} />
+                <Metrics />
                 <HowItWorks />
                 <UseCases />
                 <Integrations />
-                <Metrics />
                 <Testimonials />
                 <Pricing />
                 <FAQ />
