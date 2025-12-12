@@ -9,7 +9,7 @@ export const inter = Inter({
 
 export const metadata = {
     title: "Yapee.AI",
-    description: "Turn every customer conversation into revenue with Yapee.AI",
+    description: "Yapee.AI is an official WhatsApp Business Solution Partner with free API access, automation, broadcasts, and priority support for businesses.",
 };
 
 export default function RootLayout({ children }) {
