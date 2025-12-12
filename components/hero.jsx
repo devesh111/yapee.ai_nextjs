@@ -4,14 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Bot, Zap, Award } from "lucide-react";
 import Image from "next/image";
 
-const Hero = () => {
-    const scrollToSection = (href) => {
-        const element = document.querySelector(href);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
+const Hero = ({ scrollToSection }) => {
     return (
         <section className="relative min-h-screen hero-bg pt-24 lg:pt-32 pb-16 overflow-hidden">
             {/* Background decorations */}

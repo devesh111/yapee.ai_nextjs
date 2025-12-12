@@ -55,21 +55,8 @@ const WhatWeOffer = () => {
                         </div>
                     </div>
 
-                    {/* Right - Pain Point Cards */}
+                    {/* Right */}
                     <div className="space-y-4">
-                        {/* {painPoints.map((point, index) => (
-                            <div
-                                key={index}
-                                className="flex items-start gap-4 p-5 bg-background rounded-2xl border border-border/50 card-shadow hover:border-destructive/30 transition-all duration-300 group hover:scale-95"
-                            >
-                                <div className="shrink-0 w-12 h-12 rounded-xl bg-destructive/10 flex items-center justify-center group-hover:bg-destructive/20 transition-colors">
-                                    <point.icon className="w-6 h-6 text-destructive" />
-                                </div>
-                                <p className="text-foreground font-medium pt-2">
-                                    {point.text}
-                                </p>
-                            </div>
-                        ))} */}
                         <div>
                             <Image
                                 src="/images/third-fold-image.webp"

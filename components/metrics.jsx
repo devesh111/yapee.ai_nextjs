@@ -2,20 +2,20 @@
 
 const metrics = [
     {
-        value: "65%",
-        label: "Average reduction in first response time",
+        value: "98%",
+        label: "Open Rates",
     },
     {
-        value: "40%",
-        label: "More conversations handled without hiring",
+        value: "60%+",
+        label: "Click Rates",
     },
     {
-        value: "30%",
-        label: "Increase in qualified inbound opportunities",
+        value: "2.6Bn+",
+        label: "Active Users",
     },
     {
-        value: "24/7",
-        label: "Always-on coverage for every time zone",
+        value: "70%",
+        label: "Engegement Rate",
     },
 ];
 
@@ -32,10 +32,10 @@ const Metrics = () => {
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-2 rounded-full bg-white/20 text-white text-sm font-medium mb-6">
-                        Results that compound
+                        Why WhatsApp?
                     </span>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-white">
-                        See the impact in weeks, not quarters
+                    <h2 className="text-2xl lg:text-3xl font-bold text-white">
+                        WhatsApp unites actionable notifications and customer support in one powerful platform
                     </h2>
                 </div>
 
