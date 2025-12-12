@@ -4,37 +4,37 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
     {
-        quote: "Yapee.AI let us automate nearly half of our inbound questions in under a month. Our agents can finally focus on complex issues instead of copy-pasting the same response all day.",
-        name: "Sarah Lee",
-        role: "Head of Customer Experience",
-        company: "NovaCRM",
+        quote: "Yapee.AI transformed our WhatsApp support—scaling chats effortlessly without adding headcount. Customers are happier, and our team loves it!",
+        name: "John Hargreaves",
+        role: "Founder",
+        company: "PeakFlow Logistics",
     },
     {
-        quote: "We turned our website chat into a predictable revenue channel. The AI warms up leads and our reps step in at the right moment—with full context.",
-        name: "James Patel",
-        role: "VP of Revenue",
-        company: "FlowStack",
+        quote: "From green tick verification to priority support, Yapee.AI delivers. We've boosted conversions and kept everything compliant-game-changer for our UK brand.'",
+        name: "Sarah Wilkins",
+        role: "Marketing Director",
+        company: "BrewHaven Teas",
     },
     {
-        quote: "Setup was incredibly fast. We connected our tools, trained the AI on our docs, and started seeing results in days, not months.",
-        name: "Elena Martinez",
-        role: "COO",
-        company: "BrightCart",
+        quote: "Blazing-fast features and unlimited broadcasts mean we're always ahead. Teams like ours scale support seamlessly with Yapee.AI - no chaos, just results!'",
+        name: "Michael Martinez",
+        role: "CEO",
+        company: "TechNest Solutions",
     },
 ];
 
 const Testimonials = () => {
     return (
-        <section className="py-20 lg:py-28 bg-muted/30">
+        <section className="py-20 lg:py-28 bg-background" id="testimonials">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-2 rounded-full gradient-bg-soft border border-primary/10 text-primary text-sm font-medium mb-6">
-                        Customer stories
+                        Customers Love Yapee.AI
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Teams like yours are scaling support{" "}
-                        <span className="gradient-text">without the chaos</span>
+                        Teams Like Yours Scale Support {" "}
+                        <span className="gradient-text">Seamlessly</span>
                     </h2>
                 </div>
 

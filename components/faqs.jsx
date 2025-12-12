@@ -5,24 +5,32 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
     {
-        question: "How long does it take to set up Yapee.AI?",
-        answer: "Most teams are fully live within 1–2 weeks, and many see value in just a few days. Our team guides you through setup and best practices.",
+        question: "What does Yapee.AI do?",
+        answer: <>Yapee.AI delivers comprehensive WhatsApp marketing software for businesses.<br/><br/><strong>Key Capabilities:</strong> Broadcast and automate messages effortlessly. Run Click to WhatsApp Ads, build smart chatbots, showcase product catalogues, enable multi-agent live chat support, and collect payments directly in WhatsApp - plus much more</>,
     },
     {
-        question: "Will the AI sound like a robot?",
-        answer: "No. You control the tone of voice and guardrails. Yapee.AI is trained on your content, so responses stay on-brand and human-like.",
+        question: "Is Yapee.AI an Official WhatsApp Marketing Software?",
+        answer: "Yes, Yapee.AI is an Official WhatsApp Business Solution Partner (BSP) powered by WhatsApp Business APIs.",
     },
     {
-        question: "Can my team still jump into conversations?",
-        answer: "Absolutely. Agents can take over any AI-handled conversation, and the handoff is seamless to the customer.",
+        question: "Does Yapee.AI offer a FREE account?",
+        answer: <>Yes, Yapee.AI offers a FREE forever plan with access to WhatsApp Business API.<br/><br/><strong>Ideal for SMBs</strong> <br/>This zero-upfront-cost option suits small and medium businesses starting WhatsApp marketing.</>,
     },
     {
-        question: "Which tools do you integrate with?",
-        answer: "We integrate with major CRMs, helpdesks, e-commerce platforms, and calendars. You can also use our APIs and webhooks to connect custom tools.",
+        question: "Is there any WhatsApp Business API procurement fee for a brand/business?",
+        answer: "No setup fee for WhatsApp Business API. Yapee.AI charges only a subscription fee and procures the API free for brands and businesses.",
     },
     {
-        question: "Is my data secure?",
-        answer: "Yes. We follow industry best practices for security and data privacy, with role-based access, audit trails, and data encryption in transit and at rest.",
+        question: "How do you handle Customer Support?",
+        answer: <>Dedicated customer support via live chat, email, calls, and Zoom.<br /><br /><strong>Always Ready to Help</strong><br />Our team assists with every need, ensuring smooth operations for your business.</>,
+    },
+    {
+        question: "What is the Cost of Broadcasting messages?",
+        answer: "WhatsApp charges £0.0073 per marketing message and £0.001 per utility or authentication message. You can recharge directly from the Yapee.AI Dashboard. Each message is charged separately by Meta. eService conversations (user-initiated replies) remain free.",
+    },
+    {
+        question: "How many messages can I Broadcast in a day to my customers?",
+        answer: "Start with 1000 messages daily. Limits upgrade to 10k after 500+ sent, 100k after 5k in 7 days, and unlimited after 50k in 7 days—upgrades activate in 24 hours.",
     },
 ];
 

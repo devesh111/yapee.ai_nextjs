@@ -4,8 +4,8 @@ import {FaFacebookF, FaXTwitter, FaLinkedinIn} from 'react-icons/fa6';
 
 const footerLinks = [
     { label: "Features", href: "#features" },
+    { label: "Advanced Features", href: "#advanced-features" },
     { label: "How it works", href: "#how-it-works" },
-    { label: "Use cases", href: "#use-cases" },
     { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
 ];
