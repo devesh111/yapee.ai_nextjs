@@ -49,7 +49,7 @@ export default function Home() {
                 <Hero scrollToSection={scrollToSection}/>
                 <SocialProof />
                 {/* <PainPoints /> */}
-                {/* <WhatWeOffer /> */}
+                <WhatWeOffer />
                 <Features scrollToSection={scrollToSection} />
                 
                 <AdvancedFeatures />
