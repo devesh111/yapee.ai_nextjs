@@ -74,7 +74,7 @@ const Features = ({ scrollToSection }) => {
                     </div>
                 </div>
 
-                {/* Feature 3 */}
+                {/* Feature 3 
                 <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-12 lg:gap-20 items-center pt-15">
                     <div className="mt-2">
                         <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">Accept Payments Seamlessly Within WhatsApp Chats</h2>
@@ -99,7 +99,7 @@ const Features = ({ scrollToSection }) => {
                         />
                     </div>
                 </div>
-                
+                */}
             </div>
         </section>
     );
