@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Bot, Zap, Award } from "lucide-react";
+import { ArrowRight, MessageSquare, Bot, Zap, Award, Star } from "lucide-react";
 import Image from "next/image";
 
 const Hero = ({ scrollToSection }) => {
@@ -21,13 +21,13 @@ const Hero = ({ scrollToSection }) => {
                         {/* Eyebrow */}
                         <div className="animate-fade-up">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full gradient-bg-soft border border-primary/40 text-sm font-medium text-primary">
-                                <Award className="w-5 h-5 text-orange-500 border" />
-                                — Recognised as the WhatsApp CTX Growth Champion
+                                <Star className="w-5 h-5 text-orange-500 border" />
+                                — Precision WhatsApp Marketing
                             </span>
                         </div>
 
                         <div className="animate-fade-up text-xl text-center p-4 font-bold mb-0">
-                            <span className="gradient-text">AI-Powered</span> ✨
+                            <span className="gradient-text">Powered By AI</span> ✨
                         </div>
 
                         {/* Headline */}
@@ -37,7 +37,7 @@ const Hero = ({ scrollToSection }) => {
 
                         {/* Subheading */}
                         <p className="mt-6 text-md lg:text-lg text-muted-foreground leading-relaxed animate-fade-up delay-200">
-                            Broadcast, Automate, Engage, and Sell Effortlessly with AI‑driven WhatsApp Engagement Platform
+                            Broadcast, Automate, Engage and Sell Effortlessly with our AI‑driven WhatsApp Engagement Platform
                         </p>
 
                         {/* Trust note */}
@@ -59,14 +59,15 @@ const Hero = ({ scrollToSection }) => {
                                 variant="hero-outline"
                                 onClick={() => scrollToSection("#pricing")}
                             >
-                                Try Yapee.AI For Free
+                                Try Yapee.AI 
                             </Button>
                         </div>
 
                         
                     </div>
-
+                    
                     {/* Dashboard Demo Video */ }
+                    {/* 
                     <div className="max-w-3xl relative animate-fade-up delay-300 mx-auto">
                         <div className="bg-background w-full animate-float shadow-2xl border border-border/50 rounded-2xl p-0">
                             <div className="absolute top-5 left-6  flex items-center gap-2 mb-4">
@@ -82,7 +83,7 @@ const Hero = ({ scrollToSection }) => {
                                 height={1024}
                                 className="w-full"
                             />
-                            {/* Floating elements */}
+                            
                             <div
                                 className="absolute -top-4 -right-4 bg-background rounded-2xl shadow-xl border border-border/50 p-4 animate-float"
                                 style={{ animationDelay: "1s" }}
@@ -122,6 +123,7 @@ const Hero = ({ scrollToSection }) => {
                             </div>
                         </div>
                     </div>
+                    */}
                 </div>
             </div>
         </section>

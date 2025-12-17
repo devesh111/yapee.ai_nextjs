@@ -5,43 +5,74 @@ import { Button } from "@/components/ui/button";
 
 const plans = [
     {
-        name: "Starter",
-        price: "$49",
-        period: "/ month",
-        tagline: "For lean teams getting started with automation",
+        name: "Basic",
+        price: "£99",
+        period: "+ VAT / month",
+        tagline: "Get Started with WhatsApp Ads & WhatsApp API",
         features: [
-            "Up to 3 team members",
-            "AI chatbot on 1 website",
-            "Basic helpdesk automation",
-            "Email support",
+            "Unlimited Free Service Conversations (Live chat Replies to user messages)",
+            "WhatsApp Business API",
+            "WhatsApp Blue Tick Application",
+            "Click to WhatsApp Ads Manager",
+            "Upload & Manage Contacts",
+            "Upto 10 Tags",
+            "Upto 5 Custom Attributes",
+            "Template Messages with APIs",
+            "1 Owner + 5 FREE Agents included. Additional Agents at £20/ month each",
+            "Upto 5 Custom Attributes",
+            "Smart Audience Segregation",
+            "Broadcasting & Retargeting",
+            "Multi-Agent Live Chat",
+            "Agent Transfer & Manager Monitoring",
+            "Marketplace Integrations",
+            "2400 Messages/min",
+            "Shopify & WooCommerce Integrations",
+            "Dialogflow Chatbot Integration",
+            "Shared Team Inbox",
+            "Per Template Message Charges(charged separately): Marketing, Utility & Authentication",
         ],
         highlighted: false,
     },
     {
-        name: "Growth",
-        price: "$149",
-        period: "/ month",
-        tagline: "For growing teams that need serious scale",
+        name: "Pro",
+        price: "£149",
+        period: "+ VAT / month",
+        tagline: "Everything you need to get started with your business.",
         features: [
-            "Up to 15 team members",
-            "Multi-channel live chat",
-            "Advanced routing & workflows",
-            "CRM & calendar integrations",
-            "Priority support",
+            "All features in Basic Plan",
+            "Upto 100 Tags",
+            "Upto 20 Custom Attributes",
+            "Campaign Scheduler",
+            "Campaign Click Tracking",
+            "Smart Agent Routing",
+            "Campaign Budget Analytics",
+            "Project APIs",
+            "Custom Agent Rules",
+            "Carousel Template Click Tracking",
+            "CSV Campaign Scheduler",
+            "Google Sheets integration",
+            "Birthday automation message",
+            "User Access Control",
+            "Automatic Failed Message Retry",
+            "Per Template Message Charges(charged separately): Marketing, Utility & Authentication",
         ],
         highlighted: true,
     },
     {
-        name: "Scale",
+        name: "Enterprise",
         price: "Talk to us",
         period: "",
         tagline: "For high-volume teams with custom needs",
         features: [
-            "Unlimited team members",
-            "Custom SLAs",
-            "Dedicated success manager",
-            "Security and compliance review",
-            "Custom integrations",
+            "All features in Pro Plan",
+            "Recommended for Brands with 1 Million+ Users",
+            "Unlimited Tags",
+            "Unlimited Attributes",
+            "Downloadable Reports",
+            "Dedicated Account Manager",
+            "Priority Customer Support",
+            "Webhooks",
+            "Higher Messaging Speed",
         ],
         highlighted: false,
     },
@@ -70,8 +101,7 @@ const Pricing = () => {
                         </span>
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        All plans include a 14-day free trial and concierge
-                        onboarding.
+                        Monthly / Yearly Subscription
                     </p>
                 </div>
 
@@ -82,7 +112,7 @@ const Pricing = () => {
                             key={index}
                             className={`relative rounded-3xl p-8 ${
                                 plan.highlighted
-                                    ? "gradient-bg text-white shadow-2xl scale-105 lg:scale-110"
+                                    ? "gradient-bg text-white shadow-2xl scale-101 lg:scale-105"
                                     : "bg-background border border-border/50 card-shadow"
                             } transition-all duration-300`}
                         >
