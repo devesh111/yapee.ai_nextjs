@@ -32,7 +32,7 @@ const Hero = ({ scrollToSection }) => {
 
                         {/* Headline */}
                         <h1 className="mt-0 text-3xl sm:text-3xl lg:text-5xl font-bold tracking-tight text-foreground animate-fade-up delay-100 leading-tight lg:leading-14">
-                            Boost your revenue with WhatsApp conversations using <span className="gradient-text">Yapee.AI</span>
+                            Boost Your Revenue With WhatsApp Conversations Using <span className="gradient-text">Yapee.AI</span>
                         </h1>
 
                         {/* Subheading */}
