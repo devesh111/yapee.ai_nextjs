@@ -37,7 +37,7 @@ const plans = [
         name: "Pro",
         price: "£149",
         period: "+ VAT / month",
-        tagline: "Everything you need to get started with your business.",
+        tagline: "Everything you need to get started with your business",
         features: [
             "All features in Basic Plan",
             "Upto 100 Tags",
