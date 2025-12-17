@@ -31,7 +31,7 @@ const features = [
 
 const AdvancedFeatures = () => {
     return (
-        <section id="advanced-features" className="py-20 lg:py-28 bg-background">
+        <section id="advanced-features" className="py-20 lg:py-28 bg-muted/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">

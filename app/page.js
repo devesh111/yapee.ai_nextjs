@@ -49,15 +49,15 @@ export default function Home() {
                 <Hero scrollToSection={scrollToSection}/>
                 <SocialProof />
                 {/* <PainPoints /> */}
-                <WhatWeOffer />
+                {/* <WhatWeOffer /> */}
                 <Features scrollToSection={scrollToSection} />
-                <Metrics />
+                
                 <AdvancedFeatures />
                 <HowItWorks />
                 <Testimonials />
-                {/* <Integrations />
-                
-                <Pricing /> */}
+                <Metrics />
+                {/* <Integrations />*/}
+                <Pricing /> 
                 <FAQ />
                 <CTASection />
                 {showBackToTop && <BackToTop scrollToTop={scrollToTop} />}

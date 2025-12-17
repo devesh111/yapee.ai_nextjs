@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Features = ({ scrollToSection }) => {
     return (
-        <section id="features" className="py-20 lg:py-28 bg-muted/30">
+        <section id="features" className="py-20 lg:py-28 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -14,7 +14,7 @@ const Features = ({ scrollToSection }) => {
                         Your Complete WhatsApp Toolkit
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Launch Forms, Accept Payments, Run CTWA &{" "}
+                        Launch Forms, Run Ads, Schedule Campaigns &{" "}
                         <span className="gradient-text">Boost your Revenue</span>
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">

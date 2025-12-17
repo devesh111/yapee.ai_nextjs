@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
     { label: "Features", href: "#features" },
-    { label: "Advanced Features", href: "#advanced-features" },
     { label: "How it works", href: "#how-it-works" },
     { label: "Customer Stories", href: "#testimonials" },
+    { label: "Pricing", href: "#pricing" },
     { label: "FAQ", href: "#faq" },
 ];
 

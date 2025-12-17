@@ -35,7 +35,7 @@ const Metrics = () => {
                         Why WhatsApp?
                     </span>
                     <h2 className="text-2xl lg:text-3xl font-bold text-white">
-                        WhatsApp unites actionable notifications and customer support in one powerful platform
+                        Bringing Notifications And Customer Support Together In One Powerful Channel
                     </h2>
                 </div>
 
