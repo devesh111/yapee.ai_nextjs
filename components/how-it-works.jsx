@@ -36,10 +36,15 @@ const HowItWorks = () => {
                         Launch WhatsApp Business API Effortlessly
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Get <span className="gradient-text">WhatsApp Business API</span> Quickly
+                        Get{" "}
+                        <span className="gradient-text">
+                            WhatsApp Business API
+                        </span>{" "}
+                        Quickly
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Yapee.AI leverages Official WhatsApp Business APIs for full compliance with WhatsApp policies
+                        Yapee.AI leverages Official WhatsApp Business APIs for
+                        full compliance with WhatsApp policies
                     </p>
                 </div>
 

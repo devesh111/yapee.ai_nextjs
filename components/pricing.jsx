@@ -2,88 +2,101 @@
 
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-const plans = [
-    {
-        name: "Basic",
-        price: "£99",
-        period: "+ VAT / month",
-        tagline: "Get Started with WhatsApp Ads & WhatsApp API",
-        features: [
-            "Unlimited Free Service Conversations (Live chat Replies to user messages)",
-            "WhatsApp Business API",
-            "WhatsApp Blue Tick Application",
-            "Click to WhatsApp Ads Manager",
-            "Upload & Manage Contacts",
-            "Upto 10 Tags",
-            "Upto 5 Custom Attributes",
-            "Template Messages with APIs",
-            "1 Owner + 5 FREE Agents included. Additional Agents at £20/ month each",
-            "Upto 5 Custom Attributes",
-            "Smart Audience Segregation",
-            "Broadcasting & Retargeting",
-            "Multi-Agent Live Chat",
-            "Agent Transfer & Manager Monitoring",
-            "Marketplace Integrations",
-            "2400 Messages/min",
-            "Shopify & WooCommerce Integrations",
-            "Dialogflow Chatbot Integration",
-            "Shared Team Inbox",
-            "Per Template Message Charges(charged separately): Marketing, Utility & Authentication",
-        ],
-        highlighted: false,
-    },
-    {
-        name: "Pro",
-        price: "£149",
-        period: "+ VAT / month",
-        tagline: "Everything you need to get started with your business",
-        features: [
-            "All features in Basic Plan",
-            "Upto 100 Tags",
-            "Upto 20 Custom Attributes",
-            "Campaign Scheduler",
-            "Campaign Click Tracking",
-            "Smart Agent Routing",
-            "Campaign Budget Analytics",
-            "Project APIs",
-            "Custom Agent Rules",
-            "Carousel Template Click Tracking",
-            "CSV Campaign Scheduler",
-            "Google Sheets integration",
-            "Birthday automation message",
-            "User Access Control",
-            "Automatic Failed Message Retry",
-            "Per Template Message Charges(charged separately): Marketing, Utility & Authentication",
-        ],
-        highlighted: true,
-    },
-    {
-        name: "Enterprise",
-        price: "Talk to us",
-        period: "",
-        tagline: "For high-volume teams with custom needs",
-        features: [
-            "All features in Pro Plan",
-            "Recommended for Brands with 1 Million+ Users",
-            "Unlimited Tags",
-            "Unlimited Attributes",
-            "Downloadable Reports",
-            "Dedicated Account Manager",
-            "Priority Customer Support",
-            "Webhooks",
-            "Higher Messaging Speed",
-        ],
-        highlighted: false,
-    },
-];
+import { Switch } from "@/components/ui/switch";
+import { useState } from "react";
 
 const Pricing = () => {
+    const [isYearly, setIsYearly] = useState(false);
+
+    const plans = [
+        {
+            name: "Basic",
+            monthlyPrice: 99,
+            yearlyPrice: 89, // 10% off
+            period: "+ VAT / month",
+            tagline: "Get Started with WhatsApp Ads & WhatsApp API",
+            features: [
+                "Unlimited Free Service Conversations (Live chat Replies to user messages)",
+                "WhatsApp Business API",
+                "WhatsApp Blue Tick Application",
+                "Click to WhatsApp Ads Manager",
+                "Upload & Manage Contacts",
+                "Upto 10 Tags",
+                "Upto 5 Custom Attributes",
+                "Template Messages with APIs",
+                "1 Owner + 5 FREE Agents included. Additional Agents at £20/ month each",
+                "Upto 5 Custom Attributes",
+                "Smart Audience Segregation",
+                "Broadcasting & Retargeting",
+                "Multi-Agent Live Chat",
+                "Agent Transfer & Manager Monitoring",
+                "Marketplace Integrations",
+                "2400 Messages/min",
+                "Shopify & WooCommerce Integrations",
+                "Dialogflow Chatbot Integration",
+                "Shared Team Inbox",
+                "Per Template Message Charges(charged separately): Marketing, Utility & Authentication",
+            ],
+            highlighted: false,
+        },
+        {
+            name: "Pro",
+            monthlyPrice: 149,
+            yearlyPrice: 134, // 10% off
+            period: "+ VAT / month",
+            tagline: "Everything you need to get started with your business",
+            features: [
+                "All features in Basic Plan",
+                "Upto 100 Tags",
+                "Upto 20 Custom Attributes",
+                "Campaign Scheduler",
+                "Campaign Click Tracking",
+                "Smart Agent Routing",
+                "Campaign Budget Analytics",
+                "Project APIs",
+                "Custom Agent Rules",
+                "Carousel Template Click Tracking",
+                "CSV Campaign Scheduler",
+                "Google Sheets integration",
+                "Birthday automation message",
+                "User Access Control",
+                "Automatic Failed Message Retry",
+                "Per Template Message Charges(charged separately): Marketing, Utility & Authentication",
+            ],
+            highlighted: true,
+        },
+        {
+            name: "Enterprise",
+            monthlyPrice: null,
+            yearlyPrice: null,
+            period: "",
+            tagline: "For high-volume teams with custom needs",
+            features: [
+                "All features in Pro Plan",
+                "Recommended for Brands with 1 Million+ Users",
+                "Unlimited Tags",
+                "Unlimited Attributes",
+                "Downloadable Reports",
+                "Dedicated Account Manager",
+                "Priority Customer Support",
+                "Webhooks",
+                "Higher Messaging Speed",
+            ],
+            highlighted: false,
+        },
+    ];
+
     const scrollToSection = (href) => {
         const element = document.querySelector(href);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
         }
+    };
+
+    const getPrice = (plan) => {
+        if (!plan.monthlyPrice) return "Talk to us";
+        const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
+        return `£${price}`;
     };
 
     return (
@@ -100,9 +113,37 @@ const Pricing = () => {
                             scale when you're ready
                         </span>
                     </h2>
-                    <p className="mt-6 text-lg text-muted-foreground">
-                        Monthly / Yearly Subscription
-                    </p>
+                    <div className="mt-6 flex items-center justify-center gap-4">
+                        <span
+                            className={`text-lg ${
+                                !isYearly
+                                    ? "text-foreground font-semibold"
+                                    : "text-muted-foreground"
+                            }`}
+                        >
+                            Monthly
+                        </span>
+                        <Switch
+                            checked={isYearly}
+                            onCheckedChange={setIsYearly}
+                        />
+                        <div>
+                            <span
+                                className={`text-lg ${
+                                    isYearly
+                                        ? "text-foreground font-semibold"
+                                        : "text-muted-foreground"
+                                }`}
+                            >
+                                Yearly
+                            </span>
+                            {isYearly && (
+                                <span className="absolute ml-2 px-3 py-1 bg-green-100 text-green-700 text-sm font-semibold rounded-full">
+                                    Save 10%
+                                </span>
+                            )}
+                        </div>
+                    </div>
                 </div>
 
                 {/* Pricing Cards */}
@@ -139,16 +180,28 @@ const Pricing = () => {
                                             : "text-foreground"
                                     }`}
                                 >
-                                    {plan.price}
+                                    {getPrice(plan)}
                                 </span>
                                 <span
-                                    className={`text-lg ${
+                                    className={`text-sm ${
                                         plan.highlighted
                                             ? "text-white/80"
                                             : "text-muted-foreground"
                                     }`}
                                 >
                                     {plan.period}
+                                </span>
+                                <span
+                                    className={`text-sm font-bold ${
+                                        plan.highlighted
+                                            ? "text-white/80"
+                                            : "text-muted-foreground"
+                                    }`}
+                                >
+                                    {plan.monthlyPrice &&
+                                        `(Billed ${
+                                            isYearly ? "yearly" : "monthly"
+                                        }).`}
                                 </span>
                             </div>
                             <p
@@ -196,7 +249,7 @@ const Pricing = () => {
                             </ul>
 
                             <Button
-                                onClick={() => scrollToSection("#cta")}
+                                onClick={() => (window.location.href = "/#cta")}
                                 className={`w-full mt-8 ${
                                     plan.highlighted
                                         ? "bg-white text-primary hover:bg-white/90"
@@ -206,7 +259,7 @@ const Pricing = () => {
                                     plan.highlighted ? "secondary" : "default"
                                 }
                             >
-                                {plan.price === "Talk to us"
+                                {!plan.monthlyPrice
                                     ? "Contact sales"
                                     : "Get started"}
                             </Button>

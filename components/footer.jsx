@@ -1,13 +1,14 @@
 "use client";
 
-import {FaFacebookF, FaXTwitter, FaLinkedinIn} from 'react-icons/fa6';
+import Link from "next/link";
+import { FaFacebookF, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const footerLinks = [
-    { label: "Features", href: "#features" },
-    { label: "How it works", href: "#how-it-works" },
-    { label: "Customer Stories", href: "#testimonials" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "FAQ", href: "#faq" },
+    { label: "Features", href: "/#features" },
+    { label: "How it works", href: "/#how-it-works" },
+    { label: "Customer Stories", href: "/#testimonials" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "FAQ", href: "/#faq" },
 ];
 
 const socialLinks = [
@@ -34,10 +35,7 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
                     {/* Logo & Copyright */}
                     <div className="text-center lg:text-left">
-                        <a
-                            href="#"
-                            className="text-2xl font-bold text-white"
-                        >
+                        <a href="#" className="text-2xl font-bold text-white">
                             Yapee.AI
                         </a>
                         <p className="mt-2 text-gray-200 text-sm">
@@ -47,14 +45,14 @@ const Footer = () => {
 
                     {/* Links */}
                     <div className="flex flex-wrap justify-center gap-6">
-                        {footerLinks.map((link) => (
-                            <button
-                                key={link.label}
-                                onClick={() => scrollToSection(link.href)}
+                        {footerLinks.map((link, index) => (
+                            <Link
+                                key={index}
+                                href={link.href}
                                 className="text-sm text-gray-200 hover:text-white transition-colors"
                             >
                                 {link.label}
-                            </button>
+                            </Link>
                         ))}
                     </div>
 

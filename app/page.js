@@ -5,11 +5,11 @@ import FAQ from "@/components/faqs";
 import Features from "@/components/features";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/how-it-works";
-import Integrations from "@/components/integrations";
+// import Integrations from "@/components/integrations";
 import Metrics from "@/components/metrics";
 import Navbar from "@/components/navbar";
-import PainPoints from "@/components/pain-points";
-import Pricing from "@/components/pricing";
+// import PainPoints from "@/components/pain-points";
+// import Pricing from "@/components/pricing";
 import SocialProof from "@/components/social-proof";
 import Testimonials from "@/components/testimonials";
 import AdvancedFeatures from "@/components/advanced-features";
@@ -42,22 +42,23 @@ export default function Home() {
             element.scrollIntoView({ behavior: "smooth" });
         }
     };
+
     return (
         <div className="min-h-screen bg-white overflow-hidden">
             <Navbar />
             <main>
-                <Hero scrollToSection={scrollToSection}/>
+                <Hero scrollToSection={scrollToSection} />
                 <SocialProof />
                 {/* <PainPoints /> */}
                 <WhatWeOffer />
                 <Features scrollToSection={scrollToSection} />
-                
+
                 <AdvancedFeatures />
                 <HowItWorks />
                 <Testimonials />
                 <Metrics />
                 {/* <Integrations />*/}
-                <Pricing /> 
+                {/* <Pricing />  */}
                 <FAQ />
                 <CTASection />
                 {showBackToTop && <BackToTop scrollToTop={scrollToTop} />}

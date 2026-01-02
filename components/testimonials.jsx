@@ -33,7 +33,7 @@ const Testimonials = () => {
                         Customers Love Yapee.AI
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Teams Like Yours Scale Support {" "}
+                        Teams Like Yours Scale Support{" "}
                         <span className="gradient-text">Seamlessly</span>
                     </h2>
                 </div>
