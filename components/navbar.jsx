@@ -95,7 +95,7 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <Button
-                            onClick={() => (window.location.href = "/#cta")}
+                            onClick={() => (window.location.href = "/#cta", setIsMobileMenuOpen(false))}
                             variant="default"
                             className="w-full mt-4"
                         >
