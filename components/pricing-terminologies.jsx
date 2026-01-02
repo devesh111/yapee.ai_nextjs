@@ -11,27 +11,27 @@ const PricingTerminologies = () => {
         },
         {
             headline: "Unlimited Free Service messages",
-            text: "Each business using AiSensy receives Unlimited FREE service messages. Businesses can reply to user messages without incurring any charges; it's completely FREE.",
+            text: "Each business using Yapee.AI receives Unlimited FREE service messages. Businesses can reply to user messages without incurring any charges; it's completely FREE.",
             icon: MonitorCog,
         },
         {
             headline: "Marketing messages",
-            text: "Marketing messages include all promotional messages, offers, product updates. Each marketing message delivered costs ₹1.09/ message (for Indian users)",
+            text: "Marketing messages include all promotional messages, offers, product updates. Each marketing message delivered costs £1.09/ message (for UK users)",
             icon: Globe,
         },
         {
             headline: "Utility Messages",
-            text: "Utility messages are transactional in nature and include messages for delivery  updates, transaction receipts, reminders and more. Each utility message delivered costs ₹0.145/ message (for Indian users). Utility templates delivered within a customer service window won't be charged.",
+            text: "Utility messages are transactional in nature and include messages for delivery  updates, transaction receipts, reminders and more. Each utility message delivered costs £0.145/ message (for UK users). Utility templates delivered within a customer service window won't be charged.",
             icon: ShoppingCart,
         },
         {
             headline: "Authentication Messages",
-            text: "Authentication messages include messages used for verification purposes such as OTP, account registration and account recovery. Each authentication template message delivered costs ₹0.145/ message (for Indian users)",
+            text: "Authentication messages include messages used for verification purposes such as OTP, account registration and account recovery. Each authentication template message delivered costs £0.145/ message (for UK users)",
             icon: IdCard,
         },
         {
             headline: "Service Messages",
-            text: "Service messages includes all user-initiated messages related to customer support, Chatbot support & queries asked by users. Service conversations are FREE for all businesses using AiSensy.",
+            text: "Service messages includes all user-initiated messages related to customer support, Chatbot support & queries asked by users. Service conversations are FREE for all businesses using Yapee.AI.",
             icon: MessageSquareText,
         },
     ]
