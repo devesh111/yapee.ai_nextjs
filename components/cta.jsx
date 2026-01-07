@@ -2,12 +2,17 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import FormModal from "@/components/form-modal";
+import { useState } from "react";
+
 
 const CTASection = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    
     return (
         <section
             id="cta"
-            className="py-20 lg:py-28 bg-background relative overflow-hidden"
+            className="py-15 lg:py-15 bg-background relative overflow-hidden"
         >
             {/* Background decorations */}
             <div className="absolute inset-0 overflow-hidden">
@@ -29,7 +34,12 @@ const CTASection = () => {
                 </p>
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button variant="hero" size="xl" className="group">
+                    <Button 
+                        // onClick={()=>setIsOpen(true)}
+                        variant="hero" 
+                        size="xl" 
+                        className="group"
+                    >
                         Book a 30-minute demo
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -43,6 +53,7 @@ const CTASection = () => {
                     No long-term contracts. Upgrade or cancel anytime.
                 </p>
             </div>
+            <FormModal isOpen = {isOpen} setIsOpen={setIsOpen} />
         </section>
     );
 };

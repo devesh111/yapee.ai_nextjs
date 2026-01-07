@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Hero = ({ scrollToSection }) => {
     return (
-        <section className="relative hero-bg pt-24 lg:pt-32 pb-16 overflow-hidden">
+        <section className="relative hero-bg pt-24 lg:pt-32 pb-16 overflow-hidden lg:min-h-screen flex items-center">
             {/* Background decorations */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-primary/5 blur-3xl" />

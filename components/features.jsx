@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const Features = ({ scrollToSection }) => {
     return (
-        <section id="features" className="py-20 lg:py-28 bg-muted/30">
+        <section id="features" className="py-15 lg:py-15 bg-muted/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -27,7 +27,7 @@ const Features = ({ scrollToSection }) => {
                     <div className="mt-2">
                         <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">Launch AI-powered Click-to-WhatsApp ads</h2>
                         <p className="mt-5 text-muted-foreground leading-relaxed">Launch AI-driven ads on Facebook and Instagram that instantly open WhatsApp chats - boost your leads 5x and skyrocket conversions 2-3x right away!</p>
-                        <p className="mt-5 text-muted-foreground mb-6 leading-relaxed">Kick off campaigns directly from Yapee.AI: snag premium leads powered by smart AI and conversion APIs, sort them intelligently by priority, and fire up automated chatbot flows to nurture and close deals on autopilot.</p>
+                        <p className="mt-5 text-muted-foreground mb-6 leading-relaxed">Kick off campaigns directly from Yapee.AI: Attract high-quality leads powered by smart AI and conversion APIs, sort them intelligently by priority, and fire up automated chatbot flows to nurture and close deals on autopilot.</p>
                         <Button
                             variant="hero"
                             onClick={() => scrollToSection("#cta")}
@@ -52,7 +52,7 @@ const Features = ({ scrollToSection }) => {
                 <div className="grid lg:grid-cols-2 md:grid-cols-2 gap-12 lg:gap-20 items-center pt-15">
                     <div className="mt-2">
                         <Image
-                            src="/images/features-2v.webp"
+                            src="/images/features-2.webp"
                             alt="WhatsApp Forms"
                             width={1168}
                             height={1024}

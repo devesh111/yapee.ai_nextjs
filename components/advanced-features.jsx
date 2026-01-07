@@ -31,7 +31,7 @@ const features = [
 
 const AdvancedFeatures = () => {
     return (
-        <section id="advanced-features" className="py-20 lg:py-28 bg-background">
+        <section id="advanced-features" className="py-15 lg:py-15 bg-background">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -45,7 +45,7 @@ const AdvancedFeatures = () => {
                         </span>
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Boost your revenue with the Yapee.AI marketing platform.
+                        Yapee.AI will boost your revenue
                     </p>
                 </div>
 
