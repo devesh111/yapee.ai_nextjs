@@ -17,7 +17,6 @@ import Footer from "@/components/footer";
 import { useEffect, useState } from "react";
 import BackToTop from "@/components/back-to-top";
 import WhatWeOffer from "@/components/what-we-offer";
-
 export default function Home() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 

@@ -21,7 +21,7 @@ const metrics = [
 
 const Metrics = () => {
     return (
-        <section className="py-20 lg:py-28 gradient-bg relative overflow-hidden">
+        <section className="py-15 lg:py-15 gradient-bg relative overflow-hidden">
             {/* Background pattern */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-white blur-3xl" />

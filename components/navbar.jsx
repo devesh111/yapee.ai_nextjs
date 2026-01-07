@@ -34,7 +34,7 @@ const Navbar = () => {
             }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16 lg:h-20">
+                <div className="flex items-center justify-between h-14 lg:h-16">
                     {/* Logo */}
                     <a href="/#" className="flex items-center gap-2">
                         <span className="text-2xl font-bold gradient-text">
@@ -56,13 +56,23 @@ const Navbar = () => {
                     </div>
 
                     {/* CTA Button */}
-                    <div className="hidden lg:flex items-center gap-4">
+                    <div className="hidden lg:flex items-center gap-2">
+                        <Button
+                            onClick={() =>
+                                (window.location.href =
+                                    "https://yipyapmessenger.com/")
+                            }
+                            variant="hero-outline"
+                            size="md"
+                        >
+                            Sign In
+                        </Button>
                         <Button
                             onClick={() => (window.location.href = "/#cta")}
                             variant="default"
-                            size="default"
+                            size="md"
                         >
-                            Book a demo
+                            Book A Demo
                         </Button>
                     </div>
 
@@ -95,7 +105,10 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <Button
-                            onClick={() => (window.location.href = "/#cta", setIsMobileMenuOpen(false))}
+                            onClick={() => (
+                                (window.location.href = "/#cta"),
+                                setIsMobileMenuOpen(false)
+                            )}
                             variant="default"
                             className="w-full mt-4"
                         >

@@ -13,12 +13,16 @@ const faqs = [
         answer: "Yes, Yapee.AI is an Official WhatsApp Business Solution Partner (BSP) powered by WhatsApp Business APIs.",
     },
     {
-        question: "Does Yapee.AI offer a FREE account?",
-        answer: <>Yes, Yapee.AI offers a FREE forever plan with access to WhatsApp Business API.<br/><br/><strong>Ideal for SMBs</strong> <br/>This zero-upfront-cost option suits small and medium businesses starting WhatsApp marketing.</>,
+        question: "How do you handle customer support?",
+        answer: <>Yapee.AI. We're not just a business - we're part of the British fabric. With our roots firmly planted in the UK, we're passionate about delivering excellent customer service and support as British as a cup of tea. </>,
     },
     {
-        question: "Is there any WhatsApp Business API procurement fee for a brand/business?",
-        answer: "No setup fee for WhatsApp Business API. Yapee.AI charges only a subscription fee and procures the API free for brands and businesses.",
+        question: "Can I customise my WhatsApp business messages?",
+        answer: "Yes! Our platform allows you to personalise your messages with templates, images and more to fit your brand's voice.",
+    },
+    {
+        question: "Is my data secure on Yapee.AI?",
+        answer: "Absolutely! We prioritise your security and comply with WhatsApp's policities to keep your data safe.",
     },
     {
         question: "How do you handle Customer Support?",
@@ -38,7 +42,7 @@ const FAQ = () => {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section id="faq" className="py-20 lg:py-28 bg-muted/30">
+        <section id="faq" className="py-15 lg:py-15 bg-muted/30">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-16">
