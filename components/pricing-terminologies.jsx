@@ -5,13 +5,13 @@ import { FileHeadphone, MonitorCog, Globe, ShoppingCart, IdCard, MessageSquareTe
 const PricingTerminologies = () => {
     const terminologies = [
         {
-            headline: "Customer Service Window",
+            headline: "Customer service window",
             text: "When a user sends you a message, a 24-hour support window begins. Each new message from the user resets this window. During this window, you can respond freely without additional charges and you can respond with any free form messages. Also, utility templates delivered within this window won't be charged.",
             icon: FileHeadphone,
         },
         {
-            headline: "Unlimited Free Service messages",
-            text: "Each business using Yapee.AI receives Unlimited FREE service messages. Businesses can reply to user messages without incurring any charges; it's completely FREE.",
+            headline: "Unlimited free service messages",
+            text: "Each business using Yapee.AI receives unlimited free service messages. Businesses can reply to user messages without incurring any charges; it's completely free.",
             icon: MonitorCog,
         },
         {
@@ -20,18 +20,18 @@ const PricingTerminologies = () => {
             icon: Globe,
         },
         {
-            headline: "Utility Messages",
+            headline: "Utility messages",
             text: "Utility messages are transactional in nature and include messages for delivery  updates, transaction receipts, reminders and more. Each utility message delivered costs £0.145/ message (for UK users). Utility templates delivered within a customer service window won't be charged.",
             icon: ShoppingCart,
         },
         {
-            headline: "Authentication Messages",
+            headline: "Authentication messages",
             text: "Authentication messages include messages used for verification purposes such as OTP, account registration and account recovery. Each authentication template message delivered costs £0.145/ message (for UK users)",
             icon: IdCard,
         },
         {
-            headline: "Service Messages",
-            text: "Service messages includes all user-initiated messages related to customer support, Chatbot support & queries asked by users. Service conversations are FREE for all businesses using Yapee.AI.",
+            headline: "Service messages",
+            text: "Service messages includes all user-initiated messages related to customer support, Chatbot support & queries asked by users. Service conversations are free for all businesses using Yapee.AI.",
             icon: MessageSquareText,
         },
     ]
@@ -43,11 +43,11 @@ const PricingTerminologies = () => {
                         Terminologies
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Important Pricing{" "}
-                        <span className="gradient-text">Terminologies</span>
+                        Important pricing{" "}
+                        <span className="gradient-text">terminologies</span>
                     </h2>
                     <p className="mt-2 text-lg text-muted-foreground">
-                        Let's make WhatsApp API Pricing easy to understand for
+                        Let's make WhatsApp API pricing easy to understand for
                         you!
                     </p>
                 </div>

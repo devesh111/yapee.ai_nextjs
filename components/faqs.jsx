@@ -6,11 +6,11 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
     {
         question: "What does Yapee.AI do?",
-        answer: <>Yapee.AI delivers comprehensive WhatsApp marketing software for businesses.<br/><br/><strong>Key Capabilities:</strong> Broadcast and automate messages effortlessly. Run Click to WhatsApp Ads, build smart chatbots, showcase product catalogues, enable multi-agent live chat support, and collect payments directly in WhatsApp - plus much more</>,
+        answer: <>Yapee.AI delivers comprehensive WhatsApp marketing software for businesses.<br/><br/><strong>Key Capabilities:</strong> Broadcast and automate messages effortlessly. Run click to WhatsApp ads, build smart chatbots, showcase product catalogues, enable multi-agent live chat support, and collect payments directly in WhatsApp - plus much more</>,
     },
     {
         question: "Is Yapee.AI an Official WhatsApp Marketing Software?",
-        answer: "Yes, Yapee.AI is an Official WhatsApp Business Solution Partner (BSP) powered by WhatsApp Business APIs.",
+        answer: "Yes, Yapee.AI is an official WhatsApp business solution partner (BSP) powered by WhatsApp Business APIs.",
     },
     {
         question: "How do you handle customer support?",
@@ -25,15 +25,15 @@ const faqs = [
         answer: "Absolutely! We prioritise your security and comply with WhatsApp's policities to keep your data safe.",
     },
     {
-        question: "How do you handle Customer Support?",
-        answer: <>Dedicated customer support via live chat, email, calls, and Zoom.<br /><br /><strong>Always Ready to Help</strong><br />Our team assists with every need, ensuring smooth operations for your business.</>,
+        question: "How do you handle customer support?",
+        answer: <>Dedicated customer support via live chat, email, calls, and Zoom.<br /><br /><strong>Always ready to help</strong><br />Our team assists with every need, ensuring smooth operations for your business.</>,
     },
     {
-        question: "What is the Cost of Broadcasting messages?",
-        answer: "WhatsApp charges £0.0073 per marketing message and £0.001 per utility or authentication message. You can recharge directly from the Yapee.AI Dashboard. Each message is charged separately by Meta. eService conversations (user-initiated replies) remain free.",
+        question: "What is the cost of broadcasting messages?",
+        answer: "WhatsApp charges £0.0073 per marketing message and £0.001 per utility or authentication message. You can recharge directly from the Yapee.AI dashboard. Each message is charged separately by Meta. eService conversations (user-initiated replies) remain free.",
     },
     {
-        question: "How many messages can I Broadcast in a day to my customers?",
+        question: "How many messages can I broadcast in a day to my customers?",
         answer: "Start with 1000 messages daily. Limits upgrade to 10k after 500+ sent, 100k after 5k in 7 days, and unlimited after 50k in 7 days—upgrades activate in 24 hours.",
     },
 ];

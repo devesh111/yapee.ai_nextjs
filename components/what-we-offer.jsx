@@ -6,17 +6,17 @@ import Image from "next/image";
 const painPoints = [
     {
         icon: Grid2x2Check,
-        text1: "Numerous Powerful Messaging Categories",
-        text2: "Promotions, Offers, Coupons, Carousels and more - Risk-Free!"
+        text1: "Numerous powerful mssaging categories",
+        text2: "Promotions, offers, coupons, carousels and more - risk-free!"
     },
     {
         icon: Repeat,
-        text1: "Drive 3x Conversions",
-        text2: "Turn conversations into sales with eye-catching CTAs and Quick Reply buttons",
+        text1: "Drive 3x conversions",
+        text2: "Turn conversations into sales with eye-catching CTAs and quick reply buttons",
     },
     {
         icon: Clock,
-        text1: "Schedule WhatsApp Messages",
+        text1: "Schedule WhatsApp messages",
         text2: "Streamline your workflow by scheduling broadcasts up to 2 months ahead",
     },
 ];
@@ -29,10 +29,10 @@ const WhatWeOffer = () => {
                     {/* Left Content */}
                     <div>
                         <span className="inline-block px-4 py-2 rounded-full gradient-bg-soft text-primary text-sm font-medium mb-6">
-                            Enjoy Limitless Broadcasting Experience
+                            Enjoy limitless broadcasting experience
                         </span>
                         <h2 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-                            Send Approved Promotional Broadcasts {" "}
+                            Send approved promotional broadcasts {" "}
                             <span className="gradient-text">
                                 on WhatsApp.
                             </span>
