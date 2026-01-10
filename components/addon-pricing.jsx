@@ -13,10 +13,10 @@ const AddonPricing = () => {
         <section className="py-20 lg:py-20 bg-muted/30">
             <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-8">
                 <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                    Add-Ons (Charged separately)
+                    Add-Ons (charged separately)
                 </h2>
                 <p className="mt-2 text-lg text-muted-foreground">
-                    Get Started with Virtual Number & Drag & Drop Flow Builder
+                    Get started with virtual number & drag & drop flow builder
                 </p>
                 <div className="p-10 my-10 flex-col md:flex-row flex justify-center items-center w-full rounded-xl gap-4 border border-border/50 card-shadow bg-background">
                     <div className="border-r w-full md:w-1/4 grid justify-center">
@@ -60,37 +60,37 @@ const AddonPricing = () => {
                                 className="w-full mt-6"
                                 variant="default"
                             >
-                                Buy Now
+                                Buy now
                             </Button>
                         </div>
                     </div>
                     <div className="w-full md:w-3/4">
                         <h3 className="text-2xl lg:text-3xl font-bold text-foreground">
-                            UK Virtual Number
+                            UK virtual number
                         </h3>
                         <p className="mt-2 text-lg text-muted-foreground">
-                            Buy UK Virtual Number for WhatsApp Business API
+                            Buy UK virtual number for WhatsApp business API
                             (Requires tax documents for KYC)
                         </p>
                         <ul className="mt-5 text-md text-muted-foreground">
                             <li className="flex items-center gap-2">
                                 <Check className="text-primary w-3 h-3" />
-                                <span> UK Number (Eg. +44 7XXX XXXXXX) </span>
+                                <span> UK number (Eg. +44 7XXX XXXXXX) </span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Check className="text-primary w-3 h-3" />
                                 <span>
-                                    Use this Number to get WhatsApp Business API
+                                    Use this number to get WhatsApp business API
                                     via Yapee.AI
                                 </span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Check className="text-primary w-3 h-3" />
-                                <span>No Need to maintain SIM Card</span>
+                                <span>No need to maintain SIM card</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Check className="text-primary w-3 h-3" />
-                                <span>Free Onboarding Call </span>
+                                <span>Free onboarding call </span>
                             </li>
                         </ul>
                     </div>

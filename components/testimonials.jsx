@@ -30,11 +30,11 @@ const Testimonials = () => {
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-2 rounded-full gradient-bg-soft border border-primary/10 text-primary text-sm font-medium mb-6">
-                        Customers Love Yapee.AI
+                        Customers love Yapee.AI
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                        Teams Like Yours Scale Support{" "}
-                        <span className="gradient-text">Seamlessly</span>
+                        Teams like yours scale support{" "}
+                        <span className="gradient-text">seamlessly</span>
                     </h2>
                 </div>
 

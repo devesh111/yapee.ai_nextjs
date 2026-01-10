@@ -27,22 +27,22 @@ const Hero = ({ scrollToSection }) => {
                         </div>
 
                         <div className="animate-fade-up text-xl text-center p-4 font-bold mb-0">
-                            <span className="gradient-text">Powered By AI</span> ✨
+                            <span className="gradient-text">Powered by AI</span> ✨
                         </div>
 
                         {/* Headline */}
                         <h1 className="mt-0 text-3xl sm:text-3xl lg:text-5xl font-bold tracking-tight text-foreground animate-fade-up delay-100 leading-tight lg:leading-14">
-                            Boost Your Revenue With WhatsApp Conversations Using <span className="gradient-text">Yapee.AI</span>
+                            Boost your revenue with WhatsApp conversations using <span className="gradient-text">Yapee.AI</span>
                         </h1>
 
                         {/* Subheading */}
                         <p className="mt-6 text-md lg:text-lg text-muted-foreground leading-relaxed animate-fade-up delay-200">
-                            Broadcast, Automate, Engage and Sell Effortlessly with our AI‑driven WhatsApp Engagement Platform
+                            Broadcast, automate, engage and sell effortlessly with our AI‑driven WhatsApp engagement platform
                         </p>
 
                         {/* Trust note */}
                         <p className="mt-6 text-lg font-semibold text-muted-foreground animate-fade-up delay-400">
-                             Powered by Official WhatsApp APIs⚡
+                             Powered by official WhatsApp APIs⚡
                         </p>
 
                         {/* CTAs */}
@@ -52,7 +52,7 @@ const Hero = ({ scrollToSection }) => {
                                 onClick={() => scrollToSection("#cta")}
                                 className="group"
                             >
-                                Book A Live Demo
+                                Book a live demo
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
                             <Button

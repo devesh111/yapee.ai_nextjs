@@ -3,19 +3,19 @@
 const metrics = [
     {
         value: "98%",
-        label: "Open Rates",
+        label: "Open rates",
     },
     {
         value: "60%+",
-        label: "Click Rates",
+        label: "Click rates",
     },
     {
         value: "2.6Bn+",
-        label: "Active Users",
+        label: "Active users",
     },
     {
         value: "70%",
-        label: "Engegement Rate",
+        label: "Engegement rate",
     },
 ];
 
@@ -35,7 +35,7 @@ const Metrics = () => {
                         Why WhatsApp?
                     </span>
                     <h2 className="text-2xl lg:text-3xl font-bold text-white">
-                        Bringing Notifications And Customer Support Together In One Powerful Channel
+                        Bringing notifications and customer support together in one powerful channel
                     </h2>
                 </div>
 

@@ -6,14 +6,14 @@ const steps = [
     {
         icon: CheckCheck,
         number: "🏆",
-        title: "Earn Official Green Tick Verification",
+        title: "Earn official green tick verification",
         description:
             "Get the green tick and broadcast unlimited notifications daily on WhatsApp.",
     },
     {
         icon: MessageCircle,
         number: "💬",
-        title: "Enjoy Dedicated Live Chat Support",
+        title: "Enjoy dedicated live chat support",
         description:
             "Priority chat support from Yapee.AI team via WhatsApp, phone, live chat, and email.",
     },
@@ -33,17 +33,17 @@ const HowItWorks = () => {
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block px-4 py-2 rounded-full gradient-bg-soft border border-primary/10 text-primary text-sm font-medium mb-6">
-                        Launch WhatsApp Business API Effortlessly
+                        Launch WhatsApp business API effortlessly
                     </span>
                     <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
                         Get{" "}
                         <span className="gradient-text">
-                            WhatsApp Business API
+                            WhatsApp business API
                         </span>{" "}
                         Quickly
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Yapee.AI leverages Official WhatsApp Business APIs for
+                        Yapee.AI leverages official WhatsApp business APIs for
                         full compliance with WhatsApp policies
                     </p>
                 </div>
