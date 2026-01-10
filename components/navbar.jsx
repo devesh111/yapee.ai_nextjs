@@ -8,7 +8,7 @@ import Link from "next/link";
 const navLinks = [
     { label: "Features", href: "/#features" },
     { label: "How it works", href: "/#how-it-works" },
-    { label: "Customer Stories", href: "/#testimonials" },
+    { label: "Customer stories", href: "/#testimonials" },
     { label: "Pricing", href: "/pricing" },
     { label: "FAQ", href: "/#faq" },
 ];
@@ -65,14 +65,14 @@ const Navbar = () => {
                             variant="hero-outline"
                             size="md"
                         >
-                            Sign In
+                            Sign in
                         </Button>
                         <Button
                             onClick={() => (window.location.href = "/#cta")}
                             variant="default"
                             size="md"
                         >
-                            Book A Demo
+                            Book a demo
                         </Button>
                     </div>
 
