@@ -22,7 +22,7 @@ const Hero = ({ scrollToSection }) => {
                         <div className="animate-fade-up">
                             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full gradient-bg-soft border border-primary/40 text-sm font-medium text-primary">
                                 <Star className="w-5 h-5 text-orange-500 border" />
-                                — Precision WhatsApp Marketing
+                                — Precision WhatsApp marketing
                             </span>
                         </div>
 
