@@ -34,11 +34,14 @@ const Navbar = () => {
             }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-15 lg:h-18">
+                <div className="flex items-center justify-between h-15 lg:h-20">
                     {/* Logo */}
-                    <a href="/#" className="flex items-center gap-2">
-                        <span className="text-2xl font-bold gradient-text">
+                    <a href="/#" className="flex items-center gap-1 flex-col">
+                        <span className="text-4xl font-bold gradient-text">
                             Yapee.AI
+                        </span>
+                        <span className="text-[8px] font-semibold tracking gradient-text">
+                            Intelligent Automation, Human Conversations
                         </span>
                     </a>
 
