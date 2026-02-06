@@ -47,7 +47,7 @@ export default function Home() {
             <Navbar />
             <main>
                 <Hero scrollToSection={scrollToSection} />
-                <SocialProof />
+                {/* <SocialProof /> */}
                 {/* <PainPoints /> */}
                 <WhatWeOffer />
                 <Features scrollToSection={scrollToSection} />
