@@ -19,7 +19,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            setIsScrolled(window.scrollY > 0);
         };
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
@@ -36,11 +36,11 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-15 lg:h-20">
                     {/* Logo */}
-                    <a href="/#" className="flex items-center gap-1 flex-col">
+                    <a href="/#" className="flex items-center gap-0 flex-col">
                         <span className="text-4xl font-bold gradient-text">
-                            Yapee.AI
+                            <img src="images/logo.webp" className="w-[190px]" />
                         </span>
-                        <span className="text-[8px] font-semibold tracking gradient-text">
+                        <span className="text-[9px] font-semibold tracking gradient-text">
                             Intelligent Automation, Human Conversations
                         </span>
                     </a>
