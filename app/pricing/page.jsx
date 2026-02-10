@@ -33,7 +33,7 @@ const PricingPage = () => {
                 <Pricing />
 
                 {/* Addon Pricing Section */}
-                <AddonPricing />
+                {/* <AddonPricing /> */}
 
                 {/* Pricing Terminologies */}
                 <PricingTerminologies />
