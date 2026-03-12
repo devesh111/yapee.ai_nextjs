@@ -35,7 +35,7 @@ const CTASection = () => {
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button 
-                        // onClick={()=>setIsOpen(true)}
+                        onClick={()=>setIsOpen(true)}
                         variant="hero" 
                         size="xl" 
                         className="group"

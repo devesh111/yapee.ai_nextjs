@@ -249,7 +249,7 @@ const Pricing = () => {
                             </ul>
 
                             <Button
-                                onClick={() => (window.location.href = "/#cta")}
+                                onClick={() => (window.location.href = "https://billing.yapee.ai/order/main/packages/Order/?group_id=7")}
                                 className={`w-full mt-8 ${
                                     plan.highlighted
                                         ? "bg-white text-primary hover:bg-white/90"

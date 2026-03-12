@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Toaster } from 'react-hot-toast';
 
 export const inter = Inter({
     subsets: ["latin"],
@@ -16,7 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en" suppressHydrationWarning className="scroll-smooth">
-            <body className={`${inter.variable} antialiased`}>{children}</body>
+            <body className={`${inter.variable} antialiased`}>{children}
+                <Toaster position="top-center" />
+            </body>
         </html>
     );
 }
