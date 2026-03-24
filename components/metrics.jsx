@@ -15,7 +15,7 @@ const metrics = [
     },
     {
         value: "70%",
-        label: "Engegement rate",
+        label: "Engagement rate",
     },
 ];
 
