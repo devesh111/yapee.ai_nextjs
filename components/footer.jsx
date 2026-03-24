@@ -12,9 +12,9 @@ const footerLinks = [
 ];
 
 const socialLinks = [
-    { icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
-    { icon: FaXTwitter, href: "#", label: "X (Twitter)" },
-    { icon: FaFacebookF, href: "#", label: "Facebook" },
+    { icon: FaLinkedinIn, href: "https://www.linkedin.com/company/yapee-ai/?viewAsMember=true", label: "LinkedIn" },
+    { icon: FaXTwitter, href: "https://x.com/teamyappe", label: "X (Twitter)" },
+    { icon: FaFacebookF, href: "https://www.facebook.com/share/1FRNkSa7Q3/", label: "Facebook" },
 ];
 
 const Footer = () => {
@@ -63,6 +63,7 @@ const Footer = () => {
                                 key={social.label}
                                 href={social.href}
                                 aria-label={social.label}
+                                target="_blank"
                                 className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-primary transition-all duration-300 group"
                             >
                                 <social.icon className="w-4 h-4 text-purple-600 group-hover:text-white" />
