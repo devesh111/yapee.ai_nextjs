@@ -10,6 +10,7 @@ const footerLinks = [
     { label: "Pricing", href: "/pricing" },
     { label: "FAQ", href: "/#faq" },
     { label: "Terms", href: "/terms" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
 ];
 
 const socialLinks = [
