@@ -49,22 +49,16 @@ const Hero = ({ scrollToSection }) => {
                         </p>
 
                         {/* CTAs */}
-                        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up delay-300">
+                        <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up delay-300 items-center">
                             <Button
                                 variant="hero"
-                                onClick={() => scrollToSection("#cta")}
+                                onClick={() => (window.location.href = "/pricing")}
                                 className="group w-xs mx-auto sm:mx-0 sm:w-auto"
                             >
-                                Book a live demo
+                                Sign Up Now
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
-                            <Button
-                                variant="hero-outline"
-                                onClick={() => scrollToSection("#pricing")}
-                                className="group mx-auto sm:mx-0 sm:w-auto"
-                            >
-                                Try Yapee.AI
-                            </Button>
+                            <span className="text-xs font-light">7 day FREE trial</span>
                         </div>
                     </div>
 
