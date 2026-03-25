@@ -71,11 +71,11 @@ const Navbar = () => {
                             Sign in
                         </Button>
                         <Button
-                            onClick={() => (window.location.href = "/#cta")}
+                            onClick={() => (window.location.href = "/pricing")}
                             variant="default"
                             size="md"
                         >
-                            Book a demo
+                            Sign Up Now
                         </Button>
                     </div>
 

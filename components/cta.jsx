@@ -5,10 +5,9 @@ import { ArrowRight, Play } from "lucide-react";
 import FormModal from "@/components/form-modal";
 import { useState } from "react";
 
-
 const CTASection = () => {
     const [isOpen, setIsOpen] = useState(false);
-    
+
     return (
         <section
             id="cta"
@@ -34,18 +33,20 @@ const CTASection = () => {
                 </p>
 
                 <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button 
-                        onClick={()=>setIsOpen(true)}
-                        variant="hero" 
-                        size="xl" 
-                        className="group"
+                    <Button
+                        onClick={() => (window.location.href = "/pricing")}
+                        variant="hero"
+                        size="xl"
+                        className="group flex pb-6"
                     >
-                        Book a 30-minute demo
+                        <div className="flex flex-col">
+                            <span>Sign up Now</span>
+                            <span className="text-xs font-light">
+                                7 day FREE trial
+                            </span>
+                        </div>
+
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                    <Button variant="hero-outline" size="xl">
-                        <Play className="w-5 h-5" />
-                        Start free trial
                     </Button>
                 </div>
 
@@ -53,7 +54,7 @@ const CTASection = () => {
                     No long-term contracts. Upgrade or cancel anytime.
                 </p>
             </div>
-            <FormModal isOpen = {isOpen} setIsOpen={setIsOpen} />
+            <FormModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </section>
     );
 };
