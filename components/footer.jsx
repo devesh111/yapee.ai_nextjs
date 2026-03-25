@@ -9,6 +9,7 @@ const footerLinks = [
     { label: "Customer stories", href: "/#testimonials" },
     { label: "Pricing", href: "/pricing" },
     { label: "FAQ", href: "/#faq" },
+    { label: "Terms", href: "/terms" },
 ];
 
 const socialLinks = [
