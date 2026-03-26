@@ -58,7 +58,7 @@ const Hero = ({ scrollToSection }) => {
                                 Sign Up Now
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
-                            <span className="text-xs font-light">7 day FREE trial</span>
+                            <span className="text-2xl gradient-text-trial font-extrabold">7 day FREE trial</span>
                         </div>
                     </div>
 
