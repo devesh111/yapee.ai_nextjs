@@ -38,9 +38,10 @@ const FormModal = ({ isOpen, setIsOpen }) => {
         setLoading(true);
         try {
             // await sendToZohoCRM(formData);
-            // await sendEmail(formData);
-            console.log(formData);
-            toast.success("Thank you! We will get back to you soon.");
+            // // await sendEmail(formData);
+            // console.log(formData);
+            // toast.success("Thank you! We will get back to you soon.");
+            await sendToGoogleSheet(formData);
         } catch (error) {
             console.error("Error in form submission:", error);
             toast.error(
@@ -48,18 +49,46 @@ const FormModal = ({ isOpen, setIsOpen }) => {
                     error.message,
             );
             setLoading(false);
-        } finally {
-            setLoading(false);
-            setFormData({
-                name: "",
-                email: "",
-                phone: "",
-                company: "",
-                message: "",
-            });
-            setIsOpen(false);
-        }
+        } 
         // console.log("Form data log:", formData);
+    };
+
+    const sendToGoogleSheet = async (formData) => {
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+            const result = await res.json();
+            if (res.ok && result.ok) {
+                toast.success("Thank you! We will get back to you soon.");
+                setFormData({
+                    name: "",
+                    company: "",
+                    email: "",
+                    phone: "",
+                    message: "",
+                });
+                setLoading(false);
+                setIsOpen(false);
+            }
+            if (!result.ok) {
+                setLoading(false);
+                toast.error(result.status);
+                throw new Error(result.status);
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error.message);
+            // alert("There was an error submitting the form. Please try again later.");
+            toast.error(
+                "There was an error submitting the form. Please try again later. Error: " +
+                    error.message
+            );
+            setLoading(false);
+        }
     };
 
     return (
@@ -75,7 +104,10 @@ const FormModal = ({ isOpen, setIsOpen }) => {
                             unlock higher sales.
                         </DialogDescription>
                     </DialogHeader>
-                    <form onSubmit={handleSubmit} className="-mx-4 max-h-[60vh] overflow-y-auto px-4 form-scrollbar">
+                    <form
+                        onSubmit={handleSubmit}
+                        className="-mx-4 max-h-[60vh] overflow-y-auto px-4 form-scrollbar"
+                    >
                         <div className="grid gap-4">
                             <div className="flex items-center justify-between gap-3">
                                 <div className="w-full">
