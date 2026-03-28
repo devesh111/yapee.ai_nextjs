@@ -2,12 +2,8 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
-import FormModal from "@/components/form-modal";
-import { useState } from "react";
 
 const CTASection = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
     return (
         <section
             id="cta"
@@ -54,7 +50,6 @@ const CTASection = () => {
                     No long-term contracts. Upgrade or cancel anytime.
                 </p>
             </div>
-            <FormModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </section>
     );
 };

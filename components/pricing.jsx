@@ -4,9 +4,11 @@ import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
+import FormModal from "./form-modal";
 
 const Pricing = () => {
     const [isYearly, setIsYearly] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const plans = [
         {
@@ -86,13 +88,6 @@ const Pricing = () => {
         },
     ];
 
-    const scrollToSection = (href) => {
-        const element = document.querySelector(href);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     const getPrice = (plan) => {
         if (!plan.monthlyPrice) return "Talk to us";
         const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
@@ -145,7 +140,9 @@ const Pricing = () => {
                         </div>
                     </div>
                     <div className="mt-4">
-                        <span className="text-xl font-bold gradient-text">7 day FREE trial</span>
+                        <span className="text-xl font-bold gradient-text">
+                            7 day FREE trial
+                        </span>
                     </div>
                 </div>
 
@@ -252,7 +249,12 @@ const Pricing = () => {
                             </ul>
 
                             <Button
-                                onClick={() => (window.location.href = "https://billing.yapee.ai/order/main/packages/Order/?group_id=7")}
+                                onClick={() =>
+                                    !plan.monthlyPrice
+                                        ? setIsOpen(true)
+                                        : (window.location.href =
+                                              "https://billing.yapee.ai/order/main/packages/Order/?group_id=7")
+                                }
                                 className={`w-full mt-8 ${
                                     plan.highlighted
                                         ? "bg-white text-primary hover:bg-white/90"
@@ -270,6 +272,7 @@ const Pricing = () => {
                     ))}
                 </div>
             </div>
+            <FormModal isOpen={isOpen} setIsOpen={setIsOpen} />
         </section>
     );
 };
