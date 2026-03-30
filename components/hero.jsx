@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageSquare, Bot, Zap, Award, Star } from "lucide-react";
 import Image from "next/image";
+import { Separator } from "@/components/ui/separator";
 
 const Hero = ({ scrollToSection }) => {
     return (
@@ -14,7 +15,23 @@ const Hero = ({ scrollToSection }) => {
                 <div className="absolute bottom-0 right-1/4 w-72 h-72 rounded-full bg-indigo/5 blur-3xl" />
             </div>
 
-            <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative max-w-full sm:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="animate-fade-up flex flex-col items-center justify-center gap-3 mb-10">
+                    <div className="border-2 border-dashed border-green-500 mb-2">
+                        <h1 className="text-2xl md:text-3xl lg:text-5xl gradient-text-trial font-extrabold text-center p-2">
+                            Try <span className="gradient-text">Yapee.AI</span>{" "}
+                            Free for 7 days
+                        </h1>
+                    </div>
+                    <Button
+                        variant="hero"
+                        onClick={() => (window.location.href = "/pricing")}
+                        className="group w-xs mx-auto sm:mx-0 sm:w-auto max-w-full"
+                    >
+                        Sign Up Now
+                        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                </div>
                 <div className="grid lg:grid-cols-2 items-center justify-center gap-4">
                     {/* Left Content */}
                     <div className="text-center lg:text-left">
@@ -52,13 +69,14 @@ const Hero = ({ scrollToSection }) => {
                         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up delay-300 items-center">
                             <Button
                                 variant="hero"
-                                onClick={() => (window.location.href = "/pricing")}
-                                className="group w-xs mx-auto sm:mx-0 sm:w-auto"
+                                onClick={() =>
+                                    (window.location.href = "/pricing")
+                                }
+                                className="group w-auto mx-auto sm:mx-0 sm:w-auto"
                             >
                                 Sign Up Now
                                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </Button>
-                            <span className="text-2xl gradient-text-trial font-extrabold">7 day FREE trial</span>
                         </div>
                     </div>
 
