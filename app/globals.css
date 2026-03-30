@@ -146,8 +146,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    border: 2px dashed #3bce3b;
-    padding: 2px 30px;
 }
 
 .gradient-bg {
