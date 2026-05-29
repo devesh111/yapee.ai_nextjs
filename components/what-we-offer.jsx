@@ -6,7 +6,7 @@ import Image from "next/image";
 const painPoints = [
     {
         icon: Grid2x2Check,
-        text1: "Numerous powerful mssaging categories",
+        text1: "Numerous powerful messaging categories",
         text2: "Promotions, offers, coupons, carousels and more - risk-free!"
     },
     {
