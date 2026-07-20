@@ -20,7 +20,7 @@ const Hero = ({ scrollToSection }) => {
                     <div className="border-2 border-dashed border-green-500 mb-2">
                         <h1 className="text-2xl md:text-3xl lg:text-5xl gradient-text-trial font-extrabold text-center p-2">
                             Try <span className="gradient-text">Yapee.AI</span>{" "}
-                            Free for 7 days
+                            Free for 14 days
                         </h1>
                     </div>
                     <Button

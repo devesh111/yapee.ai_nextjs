@@ -141,7 +141,7 @@ const Pricing = () => {
                     </div>
                     <div className="mt-4">
                         <span className="text-xl font-bold gradient-text">
-                            7 day FREE trial
+                            14 day FREE trial
                         </span>
                     </div>
                 </div>

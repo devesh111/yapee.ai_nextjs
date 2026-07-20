@@ -38,7 +38,7 @@ const CTASection = () => {
                         <div className="flex flex-col">
                             <span>Sign up Now</span> 
                             <span className="text-xs font-light">
-                                7 day FREE trial
+                                14 day FREE trial
                             </span>
                         </div>
 
